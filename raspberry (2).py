@@ -50,13 +50,6 @@ f = Figure(figsize=(5,5), dpi=100)
 a = f.add_subplot(111)
 
 
-Acıklama = ''' Hız Sensörü Test Bench projesi, TMS Ar-Ge tarafından geliştirilmiş projedir.
-Projenin amacı hızlı trenlerde arıza veren hız sensörlerinin testini gerçekleştirmektir.
-Encoder RPM Motor hızı için referans alacağımız değerdir. Test Başlat butonuna basıldığında motor çalışmaya başlar. 
-Sensörlerden ve Encoder'den veri okumaya başlarız. Ekrana yazdırılan değerlerden RPM değerlerini takip edebilir 
-ya da grafiği göster butonuna tıklayarak yine Sensör RPM değerlerini gözlemleyebilirsiniz. 
-Test yeterli veri setini topladığı zaman ekrana "Test Başarıyla tamamlandı" yazısı gösterecektir.
-Test Başarısız ise "Test Başarısız" yazısını göreceksiniz. 
 
                '''
 
@@ -191,11 +184,7 @@ class AnaSayfa(tk.Frame):
         
         self.frame3 = tk.Frame(self,bg = back)
         self.frame3.pack(side='left', expand ='true', fill='y')
-        
-
-        
-     
-        
+    
 
         def Start():
           
@@ -205,16 +194,6 @@ class AnaSayfa(tk.Frame):
         def Stop():
      
              self.status_label.configure(text="Test Durduruldu. ", bg=back,fg=front) 
-
-
-
-        
-        text_box= Text(self.frame1, height=15,width=40)
-        text_box.insert("end",Acıklama)
-        text_box.config(state='disabled')
-        text_box.pack(side='top' )
-        
-        
              
         
         label = tk.Label(self.frame2, text="HIZ SENSÖRÜ TESTİ" , font=LARGE_FONT,bg=back,fg=front)
