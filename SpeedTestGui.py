@@ -51,7 +51,7 @@ a = f.add_subplot(111)
 
 
 
-               '''
+               
 
 
 sensör_verileri['A1'] = 'ENCODER RPM'
